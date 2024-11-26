@@ -7,13 +7,13 @@
 
 typedef struct specifier
 {
-    char *format;
-    int (*f)(va_list string);
+    char *type;
+    int (*f)(va_list ap);
 } specifier_t;
 
+int _putchar(char c);
 int _printf(const char *format, ...);
-int _strlen(const char *s);
-int printchar(va_list list);
-int printstring(char *var, int len);
-int (*get_format(char c));
+int print_char(va_list list);
+int print_string(va_list list);
+int(*get_format(char c));
 #endif

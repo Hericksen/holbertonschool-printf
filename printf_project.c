@@ -2,25 +2,42 @@
 
 int _printf(const char *format, ...)
 {
-    int i = 0, numchar = 0, numvar;
-    int (*f)(va_list);
-    va_list string;
-    va_start(string, format);
+    specifier_t spec[] = {
+        {"c", print_char},
+        {"s", print_string},
+        {NULL, NULL},
+    };
+    va_list ap;
+    int i = 0, j = 0;
+    int count;
+    va_start(ap, format);
 
-    while (format[i] != '\0')
+    while (format && format[i] != '\0')
     {
         if (format[i] == '%')
         {
-            f = get_format(format[i + 1]);
-            numvar = f(va_arg(string, va_list));
+            i++;
+            if(format[i] == '%')
+                _putchar(37);
+            while (spec[j].type)
+            {
+                if (*spec[j].type == format[i])
+                {
+                    spec[j].f(ap);
+                    count++;
+                }
+                j++;
+            }
         }
+        else if (format[i] == '%')
+            _putchar('%');
         else
         {
-            write(1, &format[i], 1);
-            numchar++;
+            _putchar(format[i]);
+            count++;
         }
         i++;
     }
-    return (numchar + numvar);
+    va_end(ap);
+    return (count);
 }
-
