@@ -29,7 +29,6 @@ int _printf(const char *format, ...)
                 }
                 j++;
             }
-
         }
         else
         {
