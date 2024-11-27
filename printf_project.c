@@ -1,44 +1,49 @@
 #include "main.h"
-#include <stdio.h>
+/**
+ * _printf - Custom implementation of the printf function.
+ * @format: A string containing characters to print and format specifiers.
+ * Return: The total number of characters printed.
+ */
 int _printf(const char *format, ...)
 {
-    specifier_t spec[] = {
-        {"c", print_char},
-        {"s", print_string},
-        {"%", print_percent},
-        {"d", print_decimal},
-        {"i", print_decimal},
-        {NULL, NULL},
-    };
-    va_list list;
-    int i = 0, j = 0, count;
-    va_start(list, format);
+	specifier_t spec[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{"%", print_percent},
+		{"d", print_decimal},
+		{"i", print_decimal},
+		{NULL, NULL},
+	};
+	va_list list;
+	int i = 0, j = 0, count;
 
-    while (format && format[i] != '\0')
-    {
-        if (format[i] == '%')
-        {
-            i++;
-            while (spec[j].type)
-            {
-                if (*spec[j].type == format[i])
-                {
-                    spec[j].func_print(list);
-                    count++;
-                    break;
-                }
-                j++;
-            }
+	va_start(list, format);
 
-        }
-        else
-        {
-            _putchar(format[i]);
-            count++;
-        }
-        j = 0;
-        i++;
-    }
-    va_end(list);
-    return (count);
+	while (format && format[i] != '\0')
+	{
+		if (format[i] == '%')
+		{
+			i++;
+			while (spec[j].type)
+			{
+				if (*spec[j].type == format[i])
+				{
+					spec[j].func_print(list);
+					count++;
+					break;
+				}
+				j++;
+			}
+
+		}
+		else
+		{
+			_putchar(format[i]);
+			count++;
+		}
+		j = 0;
+		i++;
+	}
+	va_end(list);
+	return (count);
 }
