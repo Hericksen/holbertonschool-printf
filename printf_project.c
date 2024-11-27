@@ -1,16 +1,20 @@
 #include "main.h"
-
-/** int _printf(const char *format, ...)
-*/
-int main(void)
+#include <stdio.h>
+int _printf(const char *format, ...)
 {
-    int numchar = 0, i;
-    /** int i = 0, numchar = 0, numvar;
-    * int (*f)(va_list);
-    * va_list string;
-    * va_start(string, format);
-    */
-    while (format[i] != '\0')
+    specifier_t spec[] = {
+        {"c", print_char},
+        {"s", print_string},
+        {"%", print_percent},
+        {"d", print_decimal},
+        {"i", print_decimal},
+        {NULL, NULL},
+    };
+    va_list list;
+    int i = 0, j = 0, count;
+    va_start(list, format);
+
+    while (format && format[i] != '\0')
     {
         /** if (format[i] == '%')
         * {
