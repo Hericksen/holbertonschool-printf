@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * print_char - Prints a character passed as a variable argument.
 * @list: A va_list containing the arguments passed to the function.
@@ -12,11 +11,16 @@ int print_char(va_list list)
 	_putchar(c);
 	return (1);
 }
-
+/**
+* print_string - Prints a string passed as a variable argument.
+* @list: A va_list containing the arguments passed to the function.
+* Return: The total number of characters printed.
+*/
 int print_string(va_list list)
 {
-    char *str = va_arg(list, char *);
-    int count = 0;
+	char *str = va_arg(list, char *);
+
+	int count = 0;
 
 	if (str == 0)
 		str = NULL;
@@ -29,20 +33,31 @@ int print_string(va_list list)
 
 	return (count);
 }
-
+/**
+ * print_percent - Prints a percent symbol (%) as output.
+ * @list: A va_list of arguments (unused in this function).
+ * Return: Always returns 1 (the number of characters printed).
+ */
 int print_percent(va_list list)
 {
 	(void)list;
 	_putchar('%');
 	return (1);
 }
-
+/**
+ * print_decimal - Prints an integer as a decimal number.
+ * @list: A va_list containing the arguments passed to the function.
+ * Return: The total number of characters printed.
+ */
 int print_decimal(va_list list)
 {
-    int n = va_arg(list, int);
-    unsigned int num;
-    char buffer[11];
-    int i = 0, count = 0;
+	int n = va_arg(list, int);
+
+	unsigned int num;
+
+	char buffer[11];
+
+	int i = 0, count = 0;
 
 	if (n < 0)
 	{
