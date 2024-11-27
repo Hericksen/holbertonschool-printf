@@ -16,17 +16,29 @@ int _printf(const char *format, ...)
 
     while (format && format[i] != '\0')
     {
-        /** if (format[i] == '%')
-        * {
-        *     f = get_format(format[i + 1]);
-        *     numvar = f(va_arg(string, va_list));
-        * }
-        * else
-        * {
-        */
-            write(1, &format[i], 1);
-            numchar++;
+        if (format[i] == '%')
+        {
+            i++;
+            while (spec[j].type)
+            {
+                if (*spec[j].type == format[i])
+                {
+                    spec[j].func_print(list);
+                    count++;
+                    break;
+                }
+                j++;
+            }
+
+        }
+        else
+        {
+            _putchar(format[i]);
+            count++;
+        }
+        j = 0;
         i++;
     }
-    return (numchar);
+    va_end(list);
+    return (count);
 }
