@@ -1,11 +1,5 @@
 # PRINTF PROJECT
----
-'
-
 ## **_printf**
-
-
-
 ## Description
 
 The function supports a variety of format specifiers and custom features, making it a valuable tool for projects where the standard library may not be available or where a custom solution is required.
