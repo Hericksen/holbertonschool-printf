@@ -7,6 +7,8 @@
 int print_char(va_list list)
 {
 	char c = va_arg(list, int);
+	if (c == 0)
+		c = 'n';
 
 	_putchar(c);
 	return (1);
@@ -22,8 +24,8 @@ int print_string(va_list list)
 
 	int count = 0;
 
-	if (str == 0)
-		str = NULL;
+	if (str == NULL)
+		str = "(null)";
 
 	while (*str)
 	{

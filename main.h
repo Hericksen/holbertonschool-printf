@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 /**
 * struct specifier - Struct that maps format specifiers to corresponding
 * functions.

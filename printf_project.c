@@ -15,24 +15,34 @@ int _printf(const char *format, ...)
 		{NULL, NULL},
 	};
 	va_list list;
-	int i = 0, j = 0, count = 0;
+	int i = 0, j = 0, count = 0, verif;
 
 	va_start(list, format);
+	if (format == NULL)
+		return (-1);
 
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
 			i++;
+			verif = 1;
 			while (spec[j].type)
 			{
 				if (*spec[j].type == format[i])
 				{
 					count += spec[j].func_print(list);
+					verif = 0;
 				}
 				j++;
 			}
-
+			if (verif == 1)
+			{
+				_putchar(format[i - 1]);
+				_putchar(format[i]);
+				count += 2;
+			}
+			
 		}
 		else
 		{
