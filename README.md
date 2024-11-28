@@ -60,8 +60,8 @@ gcc  -Wall  -Werror  -Wextra  -pedantic  *.c
 
 ## Authors
 
-*  **Jorre Jade**  _alias_ [@letihab](https://github.com/letihab)
-*  **Martin Gwendal**  _alias_ [@PellissardKevin](https://github.com/PellissardKevin)
+*  **Jorre Jade**  _alias_ [@JorreJ](https://github.com/JorreJ)
+*  **Martin Gwendal**  _alias_ [@Hericksen](https://github.com/Hericksen)
 
 ## License
 
