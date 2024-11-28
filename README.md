@@ -4,17 +4,22 @@
 
 ## Description
 
-This is a mimic version of the printf function, which have the most basic functionalities such as printing a string, a character and also printing an integer number.
+This is a mimic version of the printf function, which have basics functionalities like printing a string, a character or an integer number.
 
 ## Requirement
 
 - Ubuntu 20.04.06 LTS
 
-- include header file ```"main.h"```
-
 - compilation line : ```gcc -Wall -Werror -Wextra -pedantic *.c```
 
-- ```gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1)```
+## Features
+
+- Supports a variety of format specifiers
+    - %c: Prints a single character.
+    - %s: Prints a string of characters.
+    - %d or %i: Prints an integer in base 10.
+    - %%: Prints a percent sign.
+    - Returns the number of characters printed, excluding the null terminator.
 
 ## Flowchart
 
