@@ -21,9 +21,10 @@ int print_string(va_list list)
 	char *str = va_arg(list, char *);
 
 	int count = 0;
-
-	if (str == 0)
-		str = NULL;
+	void *p;
+	p = malloc(sizeof(char) * strlen(str));
+	if (p == NULL)
+		return (0);
 
 	while (*str)
 	{
