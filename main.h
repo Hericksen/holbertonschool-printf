@@ -22,11 +22,9 @@ typedef struct specifier
 } specifier_t;
 
 int _putchar(char c);
-
 int _printf(const char *format, ...);
-
 int print_char(va_list list);
 int print_string(va_list list);
-int print_percent(va_list list);
-int print_decimal(va_list list);
+int print_perc(va_list list);
+int print_deci(va_list list);
 #endif /* MAIN_H */

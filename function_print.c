@@ -34,22 +34,22 @@ int print_string(va_list list)
 	return (count);
 }
 /**
- * print_percent - Prints a percent symbol (%) as output.
+ * print_perc - Prints a percent symbol (%) as output.
  * @list: A va_list of arguments (unused in this function).
  * Return: Always returns 1 (the number of characters printed).
  */
-int print_percent(va_list list)
+int print_perc(va_list list)
 {
 	(void)list;
 	_putchar('%');
 	return (1);
 }
 /**
- * print_decimal - Prints an integer as a decimal number.
+ * print_deci - Prints an integer as a decimal number.
  * @list: A va_list containing the arguments passed to the function.
  * Return: The total number of characters printed.
  */
-int print_decimal(va_list list)
+int print_deci(va_list list)
 {
 	int n = va_arg(list, int), i = 0, count = 0;
 
