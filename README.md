@@ -14,7 +14,8 @@ This is a mimic version of the printf function, which have basics functionalitie
 
 ## Features
 
-- Supports a variety of format specifiers
+- Supports a variety of format specifiers :
+  
     - %c: Prints a single character.
     - %s: Prints a string of characters.
     - %d or %i: Prints an integer in base 10.
