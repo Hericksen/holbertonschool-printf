@@ -15,11 +15,11 @@ int _printf(const char *format, ...)
 		{NULL, NULL},
 	};
 	va_list list;
-	int i = 0, j = 0, count;
+	int i = 0, j = 0, count = 0;
 
 	va_start(list, format);
 
-	while (format && format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
@@ -28,9 +28,7 @@ int _printf(const char *format, ...)
 			{
 				if (*spec[j].type == format[i])
 				{
-					spec[j].func_print(list);
-					count++;
-					break;
+					count += spec[j].func_print(list);
 				}
 				j++;
 			}

@@ -27,8 +27,9 @@ int print_string(va_list list)
 
 	while (*str)
 	{
-		count += _putchar(*str);
+		_putchar(*str);
 		str++;
+		count++;
 	}
 
 	return (count);
@@ -51,17 +52,16 @@ int print_percent(va_list list)
  */
 int print_decimal(va_list list)
 {
-	int n = va_arg(list, int);
+	int n = va_arg(list, int), i = 0, count = 0;
 
 	unsigned int num;
 
 	char buffer[11];
 
-	int i = 0, count = 0;
-
 	if (n < 0)
 	{
-		count += _putchar('-');
+		_putchar('-');
+		count++;
 		num = -n;
 	}
 	else
@@ -69,7 +69,8 @@ int print_decimal(va_list list)
 
 	if (num == 0)
 	{
-		count += _putchar('0');
+		_putchar('0');
+		count++;
 		return (count);
 	}
 	while (num > 0)
