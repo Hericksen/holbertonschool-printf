@@ -6,9 +6,11 @@
  */
 int _printf(const char *format, ...)
 {
-	specifier_t spec[] = {{"c", print_char}, {"s", print_string}, {"%", print_percent}, {"d", print_decimal}, {"i", print_decimal}, {NULL, NULL},};
+	specifier_t spec[] = {{"c", print_char}, {"s", print_string},
+	{"%", print_perc}, {"d", print_deci}, {"i", print_deci}, {NULL, NULL},};
 	va_list list;
 	int i = 0, j = 0, count = 0, verif;
+
 	va_start(list, format);
 	if (format == NULL)
 		return (-1);
