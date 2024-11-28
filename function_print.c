@@ -79,8 +79,9 @@ int print_decimal(va_list list)
 		num /= 10;
 	}
 
+	count += i;
 	for (i = i - 1; i >= 0; i--)
-		count += _putchar(buffer[i]);
+		_putchar(buffer[i]);
 
 	return (count);
 }
