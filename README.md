@@ -19,7 +19,7 @@ This is a mimic version of the printf function, which have basics functionalitie
     - ```%c```: Prints a single character.
     - ```%s```: Prints a string of characters.
     - ```%d``` or ```%i```: Prints an integer in base 10.
-    - ```%%:``` Prints a percent sign.
+    - ```%%```: Prints a percent sign.
     - Returns the number of characters printed, excluding the null terminator.
 
 ## Flowchart
