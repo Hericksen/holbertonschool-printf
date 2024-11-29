@@ -91,4 +91,4 @@ int  main(void)
 
 ## License
 
-This project is licensed under ``Scotch license`` - see the [LICENSE.md](LICENSE.md) for more details.
+This project is licensed under ``Scotch license`` 
