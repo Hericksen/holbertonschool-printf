@@ -10,7 +10,7 @@ This is a mimic version of the printf function with most basic functionalities s
 
 ## Requirement
 
-- Ubuntu 20.04.06 LTS
+- Ubuntu 22.04.06 LTS
 
 - compilation line : ```gcc -Wall -Werror -Wextra -pedantic *.c```
 
