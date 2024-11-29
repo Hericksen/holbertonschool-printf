@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a mimic version of the printf function with most basic functionalities such as printing a string, a character and also printing an integer number.
+This is a mimic version of the printf function with most basic functionalities such as printing a string, a character and an integer number.
 
 ## Requirement
 
