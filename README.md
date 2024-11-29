@@ -1,6 +1,7 @@
 
 # _printf
-![image](https://github.com/user-attachments/assets/b02932da-2f4a-43b5-8f24-c9ff4a3d42b9)
+![image](https://github.com/user-attachments/assets/b02932da-2f4a-43b5-8f24-c9ff4a3d42b9)![image](https://github.com/user-attachments/assets/462d6a24-f53f-432b-8e7f-5697ea2046b5)
+
 
 ## Description
 
