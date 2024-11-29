@@ -13,7 +13,8 @@ This is a mimic version of the printf function with most basic functionalities s
 - compilation line : ```gcc -Wall -Werror -Wextra -pedantic *.c```
 
 ## FlowChart
-![image]
+![image](https://github.com/user-attachments/assets/2853607e-d921-4dbc-a675-262eac89d79a)
+
 
 ## Example
 
