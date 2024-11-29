@@ -84,7 +84,7 @@ int  main(void)
 ```
 ## Authors
 
-*  **Jorre Jade**  _alias_ [@lJorreJ](https://github.com/JorreJ)
+*  **Jorre Jade**  _alias_ [@JorreJ](https://github.com/JorreJ)
 *  **Martin Gwendal**  _alias_ [@Hericksen](https://github.com/Hericksen)
 
 ## License
