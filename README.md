@@ -1,7 +1,5 @@
 # _printf 
 
-![alt text]![image](https://github.com/user-attachments/assets/1b4c8a78-a430-473d-b928-6f25fa781c46)
-
 
 ## Description
 
@@ -25,7 +23,7 @@ This is a mimic version of the printf function, which have basics functionalitie
 
 ## Flowchart
 
-PNG Flow
+![image](https://github.com/user-attachments/assets/1b4c8a78-a430-473d-b928-6f25fa781c46)
 
 ## Example
 
