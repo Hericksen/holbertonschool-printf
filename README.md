@@ -1,4 +1,3 @@
-
 # _printf 
 
 
@@ -17,10 +16,10 @@ This is a mimic version of the printf function, which have basics functionalitie
 
 - Supports a variety of format specifiers :
   
-    - %c: Prints a single character.
-    - %s: Prints a string of characters.
-    - %d or %i: Prints an integer in base 10.
-    - %%: Prints a percent sign.
+    - ```%c```: Prints a single character.
+    - ```%s```: Prints a string of characters.
+    - ```%d``` or ```'%i'```: Prints an integer in base 10.
+    - ```%%:``` Prints a percent sign.
     - Returns the number of characters printed, excluding the null terminator.
 
 ## Flowchart
