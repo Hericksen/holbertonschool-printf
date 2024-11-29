@@ -26,7 +26,7 @@ This is a mimic version of the printf function, which have basics functionalitie
 
 PNG Flow
 
-## Exemple
+## Example
 
 #### Main file
 ```c
