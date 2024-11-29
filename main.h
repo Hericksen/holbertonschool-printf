@@ -27,4 +27,5 @@ int print_char(va_list list);
 int print_string(va_list list);
 int print_perc(va_list list);
 int print_deci(va_list list);
+int process_specifier(const char *format, va_list list, int *count);
 #endif /* MAIN_H */
