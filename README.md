@@ -1,6 +1,7 @@
 
 # _printf
-![image](https://github.com/user-attachments/assets/b02932da-2f4a-43b5-8f24-c9ff4a3d42b9)![image](https://github.com/user-attachments/assets/462d6a24-f53f-432b-8e7f-5697ea2046b5)
+![image](https://github.com/user-attachments/assets/b02932da-2f4a-43b5-8f24-c9ff4a3d42b9)![image](https://github.com/user-attachments/assets/f18c3194-90f9-404b-8fe9-c36f8c20a629)
+
 
 
 ## Description
@@ -9,7 +10,7 @@ This is a mimic version of the printf function with most basic functionalities s
 
 ## Requirement
 
-- Ubuntu 20.04.06 LTS
+- Ubuntu 22.04.06 LTS
 
 - compilation line : ```gcc -Wall -Werror -Wextra -pedantic *.c```
 
