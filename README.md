@@ -1,7 +1,6 @@
 
 # _printf
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
 
 ## Description
 
@@ -11,11 +10,12 @@ This is a mimic version of the printf function with most basic functionalities s
 
 - Ubuntu 20.04.06 LTS
 
-
 - compilation line : ```gcc -Wall -Werror -Wextra -pedantic *.c```
 
+## FlowChart
+![image]
 
-## Exemple
+## Example
 
 #### main file
 ```c
@@ -62,18 +62,13 @@ int  main(void)
 {
     int len;
     int len2;
-    unsigned  int ui;
-    void  *addr;
 
     len =  _printf("Let's try to printf a simple sentence.\n");
     len2 =  printf("Let's try to printf a simple sentence.\n");
-    ui = (unsigned  int)INT_MAX +  1024;
     _printf("Length:[%d, %i]\n", len, len);
     printf("Length:[%d, %i]\n", len2, len2);
     _printf("Negative:[%d]\n", -762534);
     printf("Negative:[%d]\n", -762534);
-    _printf("Character:[%c]\n", 'H');
-    printf("Character:[%c]\n", 'H');
     _printf("String:[%s]\n", "I am a string !");
     printf("String:[%s]\n", "I am a string !");
     len =  _printf("Percent:[%%]\n");
