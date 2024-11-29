@@ -54,14 +54,11 @@ int _printf(const char *format, ...)
 				/* Handle invalid specifier*/
 				if (format[i] == '\0')
 					return (-1);
-				else
-				{
-					_putchar('%');
-					count += j + 2;
-					while (j-- > 0)
-						_putchar(' ');
-					_putchar(format[i]);
-				}
+				_putchar('%');
+				count += j + 2;
+				while (j-- > 0)
+					_putchar(' ');
+				_putchar(format[i]);
 			}
 		}
 		else
